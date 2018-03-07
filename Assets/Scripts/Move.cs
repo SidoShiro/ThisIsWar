@@ -53,7 +53,7 @@ public class Move : MonoBehaviour
       }
       else if (Input.GetKey(KeyCode.S))
       {
-        lol.velocity = lol.velocity.normalized * MaxVelocity;
+        lol.AddForce(ForceBack * -transform.forward, ForceMode.Impulse);
         LimitSpeed();
       }
 
