@@ -15,6 +15,12 @@ public class Move : MonoBehaviour
   private float TimeLateral   = 0.2f;
   private bool hasLat       = false;
 
+
+  public float GetSpeed()
+  {
+    return lol.velocity.magnitude;
+  }
+
   // Limit Ship Velocity With MaxVelocity
   void LimitSpeed()
   {
@@ -45,6 +51,10 @@ public class Move : MonoBehaviour
     }
     else
     {
+      if (lol.velocity.magnitude > 0.5f)
+      {
+        lol.velocity = lol.velocity * 0.99f;
+      }
       /* Front / Back */
       if (Input.GetKey(KeyCode.Z))
       {

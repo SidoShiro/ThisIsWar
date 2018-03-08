@@ -15,7 +15,9 @@ public class Attack : MonoBehaviour
       Vector3 minus = new Vector3(0, 1, 0);
       Vector3 pos = transform.position;
       pos -= minus;
-      Instantiate(rocket, pos, transform.rotation);
+      GameObject n_rocket = Instantiate(rocket, pos,
+            transform.rotation) as GameObject;
+      n_rocket.SetActive(true);
     }
 	}
 }
