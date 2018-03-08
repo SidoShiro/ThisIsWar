@@ -5,6 +5,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
   public Object rocket;
+  public Transform shotpos;
 
 	// Update is called once per frame
 	void Update ()
@@ -12,11 +13,8 @@ public class Attack : MonoBehaviour
     // Shoot !
     if (Input.GetKeyDown(KeyCode.Space))
     {
-      Vector3 minus = new Vector3(0, 1, 0);
-      Vector3 pos = transform.position;
-      pos -= minus;
-      GameObject n_rocket = Instantiate(rocket, pos,
-            transform.rotation) as GameObject;
+      GameObject n_rocket = Instantiate(rocket, shotpos.position,
+            shotpos.rotation) as GameObject;
       n_rocket.SetActive(true);
     }
 	}

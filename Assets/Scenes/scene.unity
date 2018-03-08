@@ -151,13 +151,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 54288745430385794, guid: 4900ed551024f443d831f0849156c78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
+    - target: {fileID: 4979928092641094, guid: 4900ed551024f443d831f0849156c78e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114889477538464514, guid: 4900ed551024f443d831f0849156c78e, type: 2}
+    - target: {fileID: 4979928092641094, guid: 4900ed551024f443d831f0849156c78e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.678
+      objectReference: {fileID: 0}
+    - target: {fileID: 4979928092641094, guid: 4900ed551024f443d831f0849156c78e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.696
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4900ed551024f443d831f0849156c78e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &597322069
@@ -420,26 +426,9 @@ GameObject:
   m_PrefabParentObject: {fileID: 1664460767439914, guid: 4900ed551024f443d831f0849156c78e,
     type: 2}
   m_PrefabInternal: {fileID: 307697041}
---- !u!54 &2111641702 stripped
-Rigidbody:
-  m_PrefabParentObject: {fileID: 54288745430385794, guid: 4900ed551024f443d831f0849156c78e,
+--- !u!114 &2111641703 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114273513358320616, guid: 4900ed551024f443d831f0849156c78e,
     type: 2}
   m_PrefabInternal: {fileID: 307697041}
---- !u!114 &2111641703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2111641701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51f1f6b3d1c354921b5c6d73fd546266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lol: {fileID: 2111641702}
-  MaxVelocity: 7
-  ForceFront: 0.75
-  ForceBack: 0.5
-  ForceLat: 6
-  TurnSpeed: 70
-  TimeLatMax: 0.2
